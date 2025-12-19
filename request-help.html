@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/Logo1.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request Help | Euan’s Computer Support</title>
+  <meta name="description" content="Send a request for IT help in Winchester & Hampshire. Describe the issue and I’ll get back to you." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="assets/Logo2.png" alt="Euan's Computer Support logo">
+        </div>
+        <div>
+          <h1>Euan’s Computer Support</h1>
+          <span>Winchester & Hampshire • Friendly IT help</span>
+        </div>
+      </div>
+
+      <nav class="navlinks" aria-label="Site">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="request-help.html">Request Help</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card">
+        <div class="kicker">Request help</div>
+        <h2 class="h-title" style="margin-top:10px;">Tell me what’s going on</h2>
+        <p>
+          Fill this in with as much detail as you can. I’ll reply by email (or call back if you include a number).
+        </p>
+
+        <!-- Formspree: replace the action URL after you create a form -->
+        <form class="form" method="POST" action="https://formspree.io/f/mzdpzykn">
+          <div class="grid-2">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="[Add later / optional]" />
+            </div>
+
+            <div class="field">
+              <label for="contact">Preferred contact</label>
+              <select id="contact" name="preferred_contact">
+                <option value="email" selected>Email</option>
+                <option value="phone">Phone (call back)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="issue">What’s the issue?</label>
+            <textarea id="issue" name="issue" placeholder="Example: ‘Laptop is slow, takes ages to start, and updates keep failing…’" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="location">Location (optional)</label>
+            <input id="location" name="location" placeholder="Winchester / nearby town (helps with call-outs)" />
+          </div>
+
+          <!-- Honeypot to reduce spam -->
+          <input type="hidden" name="_redirect" value="thank-you.html">
+
+          <p class="note">
+            By submitting this form, you agree to the <strong><a href="privacy.html">Privacy Policy</a>.</strong>
+          </p>
+
+
+          <button class="btn btn-primary" type="submit">Send request</button>
+
+          <p class="note">
+            Email: <a href="mailto:info@euanscomputersupport.co.uk">info@euanscomputersupport.co.uk</a><br>
+            Phone: <strong>[Add later]</strong>
+          </p>
+        </form>
+
+        <div class="banner" style="margin-top:18px;">Call-out service available!</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <div>© <span id="y"></span> Euan’s Computer Support</div>
+      <div class="pill">
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="mailto:info@euanscomputersupport.co.uk">info@euanscomputersupport.co.uk</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
