@@ -271,8 +271,15 @@ html {
   .h-title{ font-size: 24px; }
 }
 
+a.policy-link {
+  text-decoration: underline;
+}
+
 a.policy-link:hover {
   text-decoration-thickness: 2px;
 }
+
+
+
 
 
