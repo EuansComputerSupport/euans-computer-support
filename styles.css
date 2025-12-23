@@ -256,10 +256,6 @@ html {
   overflow-y: scroll;
 }
 
-.policy-link {
-  text-decoration: underline;
-}
-
 @media (max-width: 700px){
   .nav{
     flex-direction: column;
@@ -274,4 +270,9 @@ html {
 @media (max-width: 380px){
   .h-title{ font-size: 24px; }
 }
+
+a.policy-link:hover {
+  text-decoration-thickness: 2px;
+}
+
 
