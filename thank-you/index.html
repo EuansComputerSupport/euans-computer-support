@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="../assets/Logo1.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You | Euan's Computer Support</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="../assets/Logo2.png" alt="Euan's Computer Support logo">
+        </div>
+        <div>
+          <h1>Euan's Computer Support</h1>
+          <span>Winchester & Hampshire • Friendly IT help</span>
+        </div>
+      </div>
+      <nav class="navlinks" aria-label="Site">
+        <a href="/home/">Home</a>
+        <a href="/services/">Services</a>
+        <a href="/request-help/">Request Help</a>
+        <a href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card" style="text-align: center; padding: 48px 22px;">
+        <div style="font-size: 64px; margin-bottom: 16px; color: #2ea44f;">✓</div>
+        <h2 class="h-title" style="margin-bottom: 16px;">Thanks for your request!</h2>
+        <p style="font-size: 16px; max-width: 500px; margin: 0 auto 12px;">
+          I've received your message and will get back to you as soon as possible — usually within 24 hours.
+        </p>
+        <p style="font-size: 14px; color: var(--muted); max-width: 500px; margin: 0 auto 32px;">
+          Check your email (including spam folder) for my reply.
+        </p>
+        <div class="cta-row" style="justify-content: center;">
+          <a class="btn btn-primary" href="/home/">Back to home</a>
+          <a class="btn" href="/services/">View services</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <div>© <span id="y"></span> Euan's Computer Support</div>
+      <div class="pill">
+        <a href="/privacy-policy/">Privacy Policy</a> ·
+        <a href="mailto:info@euanscomputersupport.co.uk">info@euanscomputersupport.co.uk</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
