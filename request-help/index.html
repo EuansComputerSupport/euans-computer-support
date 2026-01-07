@@ -53,8 +53,17 @@
           Fill this in with as much detail as you can. I'll reply by email (or call back if you include a number).
         </p>
 
-        <!-- Formspree: replace the action URL after you create a form -->
-        <form class="form" method="POST" action="https://formspree.io/f/mzdpzykn">
+        <!-- Web3Forms -->
+        <form class="form" method="POST" action="https://api.web3forms.com/submit">
+          <!-- Access Key -->
+          <input type="hidden" name="access_key" value="a4ec3832-eac3-4294-b213-02d48c6caf93">
+          
+          <!-- Redirect after submission -->
+          <input type="hidden" name="redirect" value="https://www.euanscomputersupport.co.uk/thank-you.html">
+          
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
           <div class="grid-2">
             <div class="field">
               <label for="name">Name</label>
@@ -92,13 +101,9 @@
             <input id="location" name="location" placeholder="Winchester / nearby town (helps with call-outs)" />
           </div>
 
-          <!-- Honeypot to reduce spam -->
-          <input type="hidden" name="_redirect" value="/thank-you.html">
-
           <p class="note">
             By submitting this form, you agree to the <strong><a href="/privacy-policy/">Privacy Policy</a>.</strong>
           </p>
-
 
           <button class="btn btn-primary" type="submit">Send request</button>
 
